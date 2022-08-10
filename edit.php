@@ -1,0 +1,9 @@
+<?php
+
+$nama =$_GET['nama'];
+$kelas =$_GET['kelas'];
+$id =$_GET['id'];
+
+$database = new PDO('mysql:host=localhost;dbname=smkmutu','root','');
+
+$query = $database->query("UPDATE `siswa` SET `kelas`='1' WHERE `id`='1'");
