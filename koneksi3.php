@@ -1,9 +1,9 @@
 <?php
 
-$database = new PDO ("mysql:host=localhost;dbname=bkk","root","");
+$database = new PDO ("mysql:host=localhost;dbname=smkmutu","root","");
 
 
-$query =$database->query("insert into perusahaan values (3,'putri','karawang')");
+$query =$database->query("insert into siswa values (4,'Khoirunnisa','')");
 
  
 while ($data=$query->fetch()){

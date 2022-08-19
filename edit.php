@@ -6,4 +6,7 @@ $id =$_GET['id'];
 
 $database = new PDO('mysql:host=localhost;dbname=smkmutu','root','');
 
-$query = $database->query("UPDATE `siswa` SET `kelas`='1' WHERE `id`='1'");
+$query = $database->query("UPDATE `siswa` SET `nama`='$nama',`kelas`='$kelas' WHERE `id`='$id'");
+
+header('location:select.php');
+
